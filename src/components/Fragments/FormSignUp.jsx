@@ -13,7 +13,7 @@ function FormSignUp() {
       {/* form start */}
       <div className="mt-16">
         <form action="">
-          {/* Field Name */}
+          {/* Name */}
           <div className="mb-6">
             <LabeledInput 
               label="Name"
@@ -24,7 +24,7 @@ function FormSignUp() {
             />
           </div>
 
-          {/* Field Email */}
+          {/* Email */}
           <div className="mb-6">
             <LabeledInput 
               label="Email Address"
@@ -35,7 +35,7 @@ function FormSignUp() {
             />
           </div>
 
-          {/* Field Password */}
+          {/* Password */}
           <div className="mb-6">
             <LabeledInput 
               label="Password"
