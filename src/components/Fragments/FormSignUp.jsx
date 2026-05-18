@@ -35,7 +35,7 @@ function FormSignUp() {
             />
           </div>
 
-          {/* Password */}
+          {/*  field Password */}
           <div className="mb-6">
             <LabeledInput 
               label="Password"
