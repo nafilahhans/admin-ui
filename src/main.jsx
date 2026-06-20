@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
 import './index.css';
 import { ThemeContextProvider } from "./context/themeContext.jsx";
+import { AuthContextProvider } from './context/authContext.jsx';
+//import Form from './Latihan/Form.jsx';
 //import Parent from "./latihan/Parent.jsx";
 //import { CounterContextProvider } from "./context/counterContext.jsx";
 //import Exercise from './Exercise1.jsx'
@@ -10,8 +12,10 @@ import { ThemeContextProvider } from "./context/themeContext.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <ThemeContextProvider>
-      <App />
+    <AuthContextProvider>
+      <ThemeContextProvider>
+        <App />
     </ThemeContextProvider>
+    </AuthContextProvider>
   </React.StrictMode>,
 );
